@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/orangelight"
+    >
+
+    <TextView
+        android:id="@+id/texto13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Inicia sesión como usuario!"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:textAlignment="center"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagen1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/texto13"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logocami"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/black"
+
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagen1"
+        android:layout_margin="20dp"
+        android:hint="Ingrese su número"
+        android:background="@drawable/textos"
+        android:padding="10dp"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagen1"
+        android:layout_margin="20dp"
+        android:hint="Ingrese el codigo recibido"
+        android:background="@drawable/textos"
+        android:padding="10dp"
+        android:inputType="number"
+        android:visibility="gone"
+        />
+
+
+    <Button
+        android:id="@+id/enviarnumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numero"
+        android:text="ENVIAR CÓDIGO"
+        android:layout_margin="22dp"
+        android:background="@drawable/botones2"
+        />
+
+    <Button
+        android:id="@+id/enviarcodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codigo"
+        android:text="CONFIRMAR"
+        android:layout_margin="22dp"
+        android:background="@drawable/botones2"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:src="@drawable/logoname"
+        android:layout_alignParentBottom="true"
+
+        />
+
+
+
+</RelativeLayout>
